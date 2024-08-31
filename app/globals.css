@@ -1,4 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-  
+
+.underlined-heading {
+  position: relative;
+  display: inline-block;
+}
+
+.underlined-heading::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -0.5rem;
+  transform: translateX(-50%);
+  width: 5rem;
+  height: 6px;
+  background-color: #FEAD3A;
+}
+
+.side-lined-heading {
+  position: relative;
+  display: inline-block;
+}
+
+.side-lined-heading::before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 9px;
+  height: 39px;
+  background-color: #FEAD3A;
+}

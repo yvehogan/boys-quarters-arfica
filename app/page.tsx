@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <>
       <main className="bg-[url('/images/hero.png')] bg-cover bg-center h-screen">
-        <div className="w-full px-16 h-full flex flex-col">
+        <div className="w-full px-8 md:px-20 h-full flex flex-col">
           <Header />
           <div className="flex-grow flex items-center">
             <div className="max-w-lg">
@@ -50,8 +50,8 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <div className="w-full flex justify-between py-32 px-16 gap-10">
-        <div className="w-[45%] flex">
+      <div className="w-full flex flex-col md:flex-row justify-between py-10 md:py-32 px-8 md:px-20 gap-10">
+        <div className="w-full md:w-[45%] flex">
           <div className="w-full  justify-between">
             <div className="flex items-center gap-5">
               <LongGrid />
@@ -90,9 +90,9 @@ export default function Home() {
           </div>
           <div className=""></div>
         </div>
-        <div className="w-1/2">
+        <div className="w-full md:w-1/2">
           <Image
-            src="/svgs/donations.svg"
+            src="/images/donations.png"
             alt=""
             layout="responsive"
             width={400}
@@ -101,8 +101,8 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-[#161616]">
-        <div className="px-16 py-24">
-          <h2 className="font-semibold text-[64px] text-white text-center">
+        <div className="px-8 md:px-20 py-24">
+          <h2 className="font-semibold text-[42px] md:text-[64px] text-white text-center mb-3">
             Our Initiatives
           </h2>
           <p className="text-white text-xl max-w-[800px] m-auto text-center mb-10">
@@ -148,24 +148,24 @@ export default function Home() {
           </Carousel>
         </div>
       </div>
-      <div className="w-full py-32 px-16 flex gap-24 justify-between">
-        <div className="w-1/2">
+      <div className="w-full py-10 md:py-32 px-8 md:px-20 flex flex-col md:flex-row gap-24 justify-between">
+        <div className="w-full md:w-1/2">
           <Image
-            src="/svgs/pillars.svg"
+            src="/images/pillars.png"
             alt=""
             layout="responsive"
             width={400}
             height={400}
           />
         </div>
-        <div className="w-1/2">
-          <h4 className="text-[#BCB078] text-[16px] mt-16">
+        <div className="w-full md:w-1/2">
+          <h4 className="text-[#BCB078] text-[16px] md:mt-16">
             PILLARS OF IMPACT
           </h4>
           <p className="text-secondary font-semibold text-[53px]">
             Our Pillars Of Impact
           </p>
-          <p className="text-secondary text-xl leading-9 pr-20 mb-8">
+          <p className="text-secondary text-xl leading-9 md:pr-20 mb-8">
             At Boys Quarters Africa, we believe in creating sustainable change
             through strategic initiatives that focus on four key pillars of
             impact. These pillars serve as the foundation of our projects,
@@ -182,9 +182,9 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-lightOrange flex flex-col justify-center text-center">
-        <div className="py-24 max-w-6xl m-auto px-10">
-        <h2 className="text-[53px] font-semibold text-secondary">Join us on this transformative journey to redefine masculinity in Africa.</h2>
-        <p className="text-secondary text-lg px-28 mt-3">Together, we can empower boys to dream big, break barriers, and build a better tomorrow for themselves and their communities.</p>
+        <div className="py-24 max-w-6xl m-auto mx-5 md:px-10">
+        <h2 className="text-[32px] md:text-[53px] font-semibold text-secondary">Join us on this transformative journey to redefine masculinity in Africa.</h2>
+        <p className="text-secondary text-lg md:px-28 mt-3">Together, we can empower boys to dream big, break barriers, and build a better tomorrow for themselves and their communities.</p>
         <div className="flex justify-center mt-14 gap-5">
                 <Button
                   className="bg-transparent border border-primary text-primary px-10 py-6"
