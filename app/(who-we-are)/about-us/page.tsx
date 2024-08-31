@@ -13,12 +13,11 @@ const Page = () => {
 
   return (
     <>
-      <div className="px-8 md:px-20 bg-white mb-16">
-        <Header />
+      <div className="bg-white mb-16">
         <div className="bg-white text-center mt-16">
-          <h2 className="text-[48px] md:text-[64px] font-bold underlined-heading">ABOUT US</h2>
+          <h2 className="text-secondary font-bold text-4xl md:text-[64px] md:leading-[78px] underlined-heading">ABOUT US</h2>
         </div>
-        <p className="bg-white text-[#989898] text-center w-full md:max-w-5xl mx-auto mt-8">
+        <p className="bg-white text-[#989898] text-center w-full lg:max-w-5xl mx-auto mt-8">
           &lsquo;It is believed that if a Boy is neglected or fed a diet of hate
           and violence it is obvious he will develop into a teenager who is
           misguided and confused. And the next crucial transition into manhood
@@ -72,7 +71,7 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <p className="text-xl text-[#2F2F2F] leading-8 md:p-8">
+        <p className="text-xl text-[#2F2F2F] leading-8 lg:p-8">
           Boys Quarters Africa (Registered as Boy-Child Reformation Initiative
           CAC/IT/NO134867) is a volunteer driven Boy-child transformation
           movement, missioned with the core objective of Educating, Empowering
@@ -124,7 +123,7 @@ const Page = () => {
         </div>
       </div>
       <div className="bg-lightOrange">
-        <div className="px-8 md:px-20 py-20 mx-auto flex flex-col md:flex-row justify-between">
+        <div className="px-4 lg:px-20 py-20 mx-auto flex flex-col lg:flex-row justify-between">
           <div className="w-full md:max-w-md flex flex-col justify-between">
             <div>
               <h2 className="font-semibold text-[38px] md:text-[48px] side-lined-heading pl-7">Our Story</h2>
@@ -132,7 +131,7 @@ const Page = () => {
                 To raise better Boys to become better Men.
               </p>
             </div>
-            <div className="mt-5 md:mt-0">
+            <div className="my-5 lg:my-0">
               <h2 className="font-semibold text-[38px] md:text-[48px] side-lined-heading pl-7">Our Mission</h2>
               <p className="text-xl">
                 Transforming the society by EMPOWERING, EDUCATING & ADVOCATING
@@ -154,14 +153,14 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className="bg-white mt-10 px-8 md:px-20">
+      <div className="bg-white mt-10 lg:px-20">
       <div className="flex flex-col items-center mb-10 md:mb-16">
-            <h3 className="text-[48px] font-semibold text-center">
+            <h3 className="text-secondary font-semibold text-4xl md:text-[64px] md:leading-[78px] text-center">
               Our Goals
             </h3>
             <div className="h-2 w-14 bg-primary"></div>
           </div>
-        <p className="mt-10 w-full md:max-w-5xl text-xl mx-auto text-center">
+        <p className="mt-10 w-full lg:max-w-5xl text-xl mx-auto lg:text-center">
           We are an operational NGO, meaning, we plan and carry out
           boots-on-the-ground projects to accomplish our objectives around our
           pillars of impact. This requires a great deal of careful planning,

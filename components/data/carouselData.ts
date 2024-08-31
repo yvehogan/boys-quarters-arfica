@@ -12,7 +12,7 @@ interface CarouselItem {
       imageSrc: "/images/carousel1.png",
       imageAlt: "Item 1",
       title: "#BoysToo",
-      link: "/boys-too"
+      link: "/the-boys-too"
     },
     {
       id: 2,
@@ -26,7 +26,7 @@ interface CarouselItem {
       imageSrc: "/images/carousel3.png",
       imageAlt: "Item 3",
       title: "International Boys Summit",
-      link: "/international-boys-summit"
+      link: "/boys-summit"
     },
     {
       id: 4,

@@ -23,7 +23,7 @@ const BoysSummit = () => {
         <div className='lg:w-[85%] text-lg'>
           <p>
             {' '}
-            Boys Quarters Africa hosted Africa’s first
+            Boys Quarters Africa hosted Africa&apos;s first
             virtual International Boy-Child Summit on the
             16th of May, 2020. This 5 hours summit was in
             celebration of the boy child and it was themed
@@ -78,14 +78,18 @@ const BoysSummit = () => {
         </p>
         <div className='bg-primary h-[7px] mt-3 w-[66px]' />
       </div>
-      <div className='mb-10 mt-8c w-full flex lg:flex-row flex-col gap-[67px] justify-between'>
+      <div className='mb-10 mt-8 w-full flex gap-8 lg:flex-row flex-col justify-between'>
         <Image
           src={vid1}
+          width={500}
+          height={500}
           alt='speaking man'
           priority
         />
         <Image
           src={vid2}
+          width={500}
+          height={500}
           alt='speaking man'
           priority
         />

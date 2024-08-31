@@ -4,15 +4,13 @@ import Image from "next/image";
 
 const OneBoyProject = () => {
   return (
-    <div className="bg-white px-8 md:px-20">
-      <Header />
-      <div className="mt-16">
-        <p className="text-primary text-xl mb-3">Our Initiatives</p>
-        <h3 className="text-[32px] md:text-[48px] font-bold">THE ONE BOY PROJECT</h3>
+    <div className="bg-white">
+      <div className="">
+        <h3 className="text-secondary font-bold text-5xl md:text-[64px] md:leading-[78px]">THE ONE BOY PROJECT</h3>
         <div className="h-1 w-12 bg-primary mt-2 mb-4"></div>
       </div>
-      <div className="w-full py-16 md:py-32 md:px-16 flex flex-col md:flex-row gap-8 justify-between items-center">
-        <div className="w-fullmd:w-1/2">
+      <div className="w-full py-16 md:py-32 lg:px-16 flex flex-col lg:flex-row gap-8 justify-between items-center">
+        <div className="w-full lg:w-1/2">
           <Image
             src="/images/one-boy-project.png"
             alt=""
@@ -21,7 +19,7 @@ const OneBoyProject = () => {
             height={400}
           />
         </div>
-        <div className="w-full md:w-1/2">
+        <div className="w-full lg:w-1/2">
           <p className="text-secondary text-xl leading-9 mb-1">
             As at January 2020, the educeleb.com reported that there are more
             boys out of school than girls in Nigeria. According to the report,

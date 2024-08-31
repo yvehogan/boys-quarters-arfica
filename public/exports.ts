@@ -18,3 +18,4 @@ export { default as vid1 } from './images/initiatives/video1.png';
 export { default as vid2 } from './images/initiatives/video2.png';
 export { default as sabi1 } from './images/initiatives/sabi1.png';
 export { default as sabi2 } from './images/initiatives/sabi2.png';
+export { default as academy } from './images/finishing-academy.png';
