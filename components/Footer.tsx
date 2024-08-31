@@ -16,10 +16,10 @@ const Footer = () => {
     }
 
   return (
-    <div className="mt-16 md:mt-32 bg-[#161616] text-[#F7F8FA]">
-      <div className="px-16 pt-24 3b-5">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-        <div className="flex items-start gap-10">
+    <div className="mt-16 lg:mt-32 bg-[#161616] text-[#F7F8FA]">
+      <div className="px-8 lg:px-16 pt-24 mb-5">
+        <div className="flex flex-col lg:flex-row lg:justify-between items-center">
+        <div className="flex items-start gap-4 lg:gap-10">
           <Image
             src="/images/logo2.png"
             alt="boys quarters logo"
@@ -48,7 +48,7 @@ const Footer = () => {
             </div>
             </div>
           </div>
-          <form  onSubmit={handleSubmit} className="mt-6 relative">
+          <form  onSubmit={handleSubmit} className="mt-3 lg:mt-6 mb-10 lg:mb-0 relative">
             <p className="mb-2">Subscribe to our newsletter</p>
               <input
                 type="email"

@@ -1,28 +1,25 @@
 import React from "react";
 import Header from "@/components/Header";
 import Image from "next/image";
+import { academy } from "@/public/exports";
 
 const FinishingAcademy = () => {
   return (
-    <div className="bg-white px-8 md:px-20">
-      <Header />
-      <div className="mt-16">
-        <p className="text-primary text-xl mb-3">Our Initiatives</p>
-        <h3 className="text-[32px] md:text-[48px] font-bold w-full md:max-w-xl">
+    <div className="bg-white pb-20">
+      <div className="">
+        <h3 className=" text-secondary font-bold text-5xl md:text-[64px] lg:leading-[78px] max-w-3xl">
           THE BOYS FINISHING ACADEMY
         </h3>
         <div className="h-1.5 w-12 bg-primary mt-2 mb-4"></div>
-        <div className="w-full pt-20 flex flex-col md:flex-row gap-10 justify-between items-center">
-          <div className="w-full md:w-1/2">
+        <div className="w-full pt-20 flex flex-col lg:flex-row gap-10 justify-between items-center">
+          <div className="w-full lg:w-1/2">
             <Image
-              src="/images/finishing-academy.png"
+              src={academy}
               alt=""
               layout="responsive"
-              width={400}
-              height={400}
             />
           </div>
-          <div className="w-full md:w-1/2">
+          <div className="w-full lg:w-1/2">
             <p className="text-secondary text-xl leading-9 mb-1">
               Boyformation Academy is the organization&apos;s custom-curated
               boot camp for boys to re-educate them and help them unlearn

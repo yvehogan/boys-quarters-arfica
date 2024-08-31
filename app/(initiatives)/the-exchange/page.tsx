@@ -10,15 +10,13 @@ const images = [
 
 const TheExchange = () => {
   return (
-    <div className="bg-white px-8 md:px-20">
-      <Header />
-      <div className="mt-16">
-        <p className="text-primary text-xl mb-3">Our Initiatives</p>
-        <h3 className="text-[32px] md:text-[48px] font-bold">THE EXCHANGE</h3>
+    <div className="bg-white">
+      <div className="">
+        <h3 className="text-secondary font-bold text-5xl md:text-[64px] md:leading-[78px]">THE EXCHANGE</h3>
         <div className="h-1 w-12 bg-primary mt-2 mb-4"></div>
       </div>
-      <div className="w-full pt-10 md:pt-28 flex flex-col md:flex-row gap-8 justify-between items-center">
-        <div className="w-full md:w-1/2">
+      <div className="w-full pt-10 md:pt-28 flex flex-col lg:flex-row gap-8 justify-between items-center">
+        <div className="w-full lg:w-1/2">
           <p className="text-secondary text-xl leading-9 mb-1">
             The EXCHANGE PROJECT has been positioned to help boys in juvenile
             correctional centres re-integrate into the society without operating
@@ -46,7 +44,7 @@ const TheExchange = () => {
             </li>
           </ul>
         </div>
-        <div className="w-full md:w-1/2">
+        <div className="w-full lg:w-1/2">
           <Image
             src="/images/exchange1.png"
             alt=""
@@ -56,8 +54,8 @@ const TheExchange = () => {
           />
         </div>
       </div>
-      <div className="w-full py-32 flex flex-col-reverse md:flex-row gap-8 justify-between">
-        <div className="w-full md:w-1/2">
+      <div className="w-full py-32 flex flex-col-reverse lg:flex-row gap-8 justify-between">
+        <div className="w-full lg:w-1/2">
           <Image
             src="/images/exchange2.png"
             alt=""
@@ -66,7 +64,7 @@ const TheExchange = () => {
             height={400}
           />
         </div>
-        <div className="w-full md:w-1/2">
+        <div className="w-full lg:w-1/2">
           <p className="text-secondary text-xl leading-9 mb-1">
             We have just recently secured the partnership of the OGUN STATE
             government to activate the EXCHANGE PROJECT at the Special
@@ -92,12 +90,12 @@ const TheExchange = () => {
         </div>
       </div>
       <div className="flex flex-col items-center mb-16">
-            <h3 className="text-[32px] md:text-[48px] font-semibold text-center">
+            <h3 className="text-secondary font-semibold text-5xl lg:text-[64px] md:leading-[78px] text-center">
               The Exchange Lagos
             </h3>
             <div className="h-2 w-16 bg-primary"></div>
           </div>
-          <div className="flex gap-2 justify-between mb-32 md:px-16 overflow-hidden">
+          <div className="flex gap-2 justify-between mb-32 lg:px-16 overflow-hidden">
           {images.map((item, index) => (
         <Image key={index} src={item.src} alt={item.alt} width={350} height={350} />
       ))}

@@ -5,10 +5,9 @@ import Image from 'next/image';
 
 const OurPeople = () => {
   return (
-    <div className="px-8 md:px-20 bg-white mb-16">
-        <Header />
-        <div className="text-center mt-10">
-          <h2 className="text-[48px] md:text-[64px] font-bold underlined-heading">OUR PEOPLE</h2>
+    <div className="bg-white mb-16">
+        <div className="text-center mt-16 mb-24">
+          <h2 className="text-secondary font-bold text-4xl md:text-[64px] md:leading-[78px] underlined-heading">OUR PEOPLE</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-16">
           {ourPeople?.map((people) => (

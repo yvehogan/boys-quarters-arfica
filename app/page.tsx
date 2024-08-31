@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <>
       <main className="bg-[url('/images/hero.png')] bg-cover bg-center h-screen">
-        <div className="w-full px-8 md:px-20 h-full flex flex-col">
+        <div className="w-full px-8 lg:px-20 h-full flex flex-col">
           <Header />
           <div className="flex-grow flex items-center">
             <div className="max-w-lg">
@@ -50,8 +50,8 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <div className="w-full flex flex-col md:flex-row justify-between py-10 md:py-32 px-8 md:px-20 gap-10">
-        <div className="w-full md:w-[45%] flex">
+      <div className="w-full flex flex-col lg:flex-row justify-between py-10 lg:py-32 px-8 lg:px-20 gap-10">
+        <div className="w-full lg:w-[45%] flex">
           <div className="w-full  justify-between">
             <div className="flex items-center gap-5">
               <LongGrid />
@@ -90,7 +90,7 @@ export default function Home() {
           </div>
           <div className=""></div>
         </div>
-        <div className="w-full md:w-1/2">
+        <div className="w-full lg:w-1/2">
           <Image
             src="/images/donations.png"
             alt=""
@@ -148,8 +148,8 @@ export default function Home() {
           </Carousel>
         </div>
       </div>
-      <div className="w-full py-10 md:py-32 px-8 md:px-20 flex flex-col md:flex-row gap-24 justify-between">
-        <div className="w-full md:w-1/2">
+      <div className="w-full py-10 lg:py-32 px-8 lg:px-20 flex flex-col lg:flex-row gap-24 justify-between">
+        <div className="w-full lg:w-1/2">
           <Image
             src="/images/pillars.png"
             alt=""
@@ -158,7 +158,7 @@ export default function Home() {
             height={400}
           />
         </div>
-        <div className="w-full md:w-1/2">
+        <div className="w-full lg:w-1/2">
           <h4 className="text-[#BCB078] text-[16px] md:mt-16">
             PILLARS OF IMPACT
           </h4>
@@ -182,9 +182,9 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-lightOrange flex flex-col justify-center text-center">
-        <div className="py-24 max-w-6xl m-auto mx-5 md:px-10">
-        <h2 className="text-[32px] md:text-[53px] font-semibold text-secondary">Join us on this transformative journey to redefine masculinity in Africa.</h2>
-        <p className="text-secondary text-lg md:px-28 mt-3">Together, we can empower boys to dream big, break barriers, and build a better tomorrow for themselves and their communities.</p>
+        <div className="py-24 max-w-6xl mx-auto md:px-10">
+        <h2 className="text-[32px] lg:text-[53px] font-semibold text-secondary">Join us on this transformative journey to redefine masculinity in Africa.</h2>
+        <p className="text-secondary text-lg lg:px-28 mt-3">Together, we can empower boys to dream big, break barriers, and build a better tomorrow for themselves and their communities.</p>
         <div className="flex justify-center mt-14 gap-5">
                 <Button
                   className="bg-transparent border border-primary text-primary px-10 py-6"

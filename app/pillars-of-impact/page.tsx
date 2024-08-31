@@ -6,10 +6,10 @@ const page = () => {
   return (
     <div>
       <div className="bg-[url('/images/pillars-of-impact.png')] bg-cover bg-center h-screen relative mb-32">
-        <div className="w-full px-16 h-full flex flex-col">
+        <div className="w-full px-8 md:px-20 h-full flex flex-col">
           <Header />
-          <div className="w-full md:w-[calc(100%-35rem)] bg-primary absolute -bottom-16 left-0 md:right-0">
-            <div className="w-full md:max-w-4xl px-4 py-10">
+          <div className="w-full lg:w-[calc(100%-35rem)] bg-primary absolute -bottom-16 right-0">
+            <div className="w-full lg:max-w-4xl px-4 py-10">
               <p className="font-bold text-[64px] leading-tight text-white py-4 max-w-[10ch]">
                 PILLARS OF IMPACT
               </p>
@@ -24,8 +24,8 @@ const page = () => {
             </h3>
             <div className="h-2 w-12 bg-primary"></div>
           </div>
-        <div className="w-full px-8 md:px-20 flex flex-col md:flex-row gap-12 justify-between">
-          <div className="w-full md:w-1/2">
+        <div className="w-full px-8 md:px-20 flex flex-col lg:flex-row gap-12 justify-between">
+          <div className="w-full lg:w-1/2">
             <p className="text-secondary text-xl leading-9 md:pr-8">
               The principal objective of this Pillar of Impact is to detox the
               minds of every Boy of the&lsquo;Stereotyped Masculine
@@ -43,7 +43,7 @@ const page = () => {
               understanding of what leadership means to our Boys.
             </p>
           </div>
-          <div className="w-full md:w-1/2">
+          <div className="w-full lg:w-1/2">
             <Image
               src="/images/leadership.png"
               alt=""
@@ -62,8 +62,8 @@ const page = () => {
             </h3>
             <div className="h-2 w-12 bg-primary"></div>
           </div>
-          <div className="flex flex-col-reverse md:flex-row items-center gap-10 justify-between mb-28">
-            <div className="w-full md:w-1/2">
+          <div className="flex flex-col-reverse lg:flex-row items-center gap-10 justify-between mb-28">
+            <div className="w-full lg:w-1/2">
               <Image
                 src="/images/education.png"
                 alt=""
@@ -72,7 +72,7 @@ const page = () => {
                 height={400}
               />
             </div>
-            <div className="w-full md:w-1/2">
+            <div className="w-full lg:w-1/2">
               <p className="text-secondary text-xl leading-9 md:pr-8">
                 Under the Pillar, Education, our goal is to empty the street of
                 Africa of Young Boys who are subjected to several form of
@@ -95,8 +95,8 @@ const page = () => {
           </div>
           <h3 className="text-[32px] font-semibold mb-2">Flagship Project</h3>
           <div className="h-1 w-12 bg-primary mt-2"></div>
-          <div className="w-full flex flex-col md:flex-row items-center gap-10 justify-between">
-            <div className="w-full md:w-1/2 mt-5 md:mt-0">
+          <div className="w-full flex flex-col lg:flex-row items-center gap-10 justify-between">
+            <div className="w-full lg:w-1/2 mt-5 lg:mt-0">
               <p className="text-secondary text-xl leading-9">
                 <span className="font-bold">The Digi-Street Hub:</span> This
                 core objective of this project is combat the spike in internet
@@ -120,7 +120,7 @@ const page = () => {
                 Problem Solving. Creativity & Innovation.
               </p>
             </div>
-            <div className="w-full md:w-1/2 relative mt-12 md:mt-0" style={{ height: "550px" }}>
+            <div className="w-full lg:w-1/2 relative mt-12 lg:mt-0" style={{ height: "550px" }}>
               <div className="absolute left-0 top-10 bottom-0 w-[calc(50%-8px)]">
                 <Image
                   src="/images/flagship-project1.png"
@@ -146,7 +146,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="bg-white w-full py-16 px-8 md:px-20">
+      <div className="bg-white w-full py-16 px-8 lg:px-20">
         <div className="w-full md:px-16">
           <div className="flex flex-col items-center mb-16">
             <h3 className="text-[48px] font-semibold text-center">
@@ -155,8 +155,8 @@ const page = () => {
             <div className="h-2 w-12 bg-primary"></div>
           </div>
 
-          <div className="flex flex-col md:flex-row items-center gap-8 justify-between mb-32">
-            <div className="w-full md:w-1/2">
+          <div className="flex flex-col lg:flex-row items-center gap-8 justify-between mb-32">
+            <div className="w-full lg:w-1/2">
               <p className="text-secondary text-xl leading-9">
                 Under the Empowerment Pillar, we currently run a Year-Long at
                 Special Correctional Centre for Boys called{" "}
@@ -174,7 +174,7 @@ const page = () => {
                 Safe Home.
               </p>
             </div>
-            <div className="w-full md:w-1/2">
+            <div className="w-full lg:w-1/2">
               <Image
                 src="/images/empowerment.png"
                 alt=""
@@ -184,8 +184,8 @@ const page = () => {
               />
             </div>
           </div>
-          <div className="bg-white w-full flex flex-col-reverse md:flex-row items-center gap-5 justify-between">
-            <div className="w-full mt-24 md:mt-0 md:w-1/2 relative" style={{ height: "550px" }}>
+          <div className="bg-white w-full flex flex-col-reverse lg:flex-row items-center gap-5 justify-between">
+            <div className="w-full mt-24 lg:mt-0 lg:w-1/2 relative" style={{ height: "550px" }}>
               <div className="absolute right-0 top-10 bottom-0 w-[calc(50%-8px)]">
                 <Image
                   src="/images/empowerment2.png"
@@ -208,7 +208,7 @@ const page = () => {
                 />
               </div>
             </div>
-            <div className="w-full md:w-1/2">
+            <div className="w-full lg:w-1/2">
               <h3 className="text-[32px] font-semibold">
                 Flagship Project
               </h3>
@@ -236,8 +236,8 @@ const page = () => {
             </h3>
             <div className="h-2 w-12 bg-primary"></div>
           </div>
-          <div className="flex flex-col md:flex-row items-center gap-10 justify-between mb-20">
-            <div className="w-full md:w-1/2">
+          <div className="flex flex-col lg:flex-row items-center gap-10 justify-between mb-20">
+            <div className="w-full lg:w-1/2">
               <Image
                 src="/images/advocacy.png"
                 alt=""
@@ -246,8 +246,8 @@ const page = () => {
                 height={400}
               />
             </div>
-            <div className="w-full md:w-1/2">
-              <p className="text-secondary text-xl leading-9 md:pr-8">
+            <div className="w-full lg:w-1/2">
+              <p className="text-secondary text-xl leading-9 lg:pr-8">
                 The <span className="font-bold">#BoysToo </span>Campaign is one
                 of our Flagship Project and this falls under the pillar of
                 &lsquo;Advocacy&rsquo;. We intend to bring to fore the menace of
@@ -257,15 +257,15 @@ const page = () => {
                 are working with Psychologists, Counselors and Psycho-Therapists
                 on this cause.
               </p>
-              <p className="text-secondary text-xl leading-9 pr-8 mt-1">
+              <p className="text-secondary text-xl leading-9 lg:pr-8 mt-1">
                 We aren&apos;t just talking to them. We are also working to help
                 some of them find healing and closure.
               </p>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row gap-10 justify-between mb-16">
-            <div className="w-full md:w-1/2 md:pl-5">
-              <p className="text-secondary text-xl leading-9 md:pr-8">
+          <div className="flex flex-col lg:flex-row gap-10 justify-between mb-16">
+            <div className="w-full lg:w-1/2 lg:pl-5">
+              <p className="text-secondary text-xl leading-9 lg:pr-8">
                 Apart from our engagement with the Boys, we also GATHER DATA.
                 We&apos;ve met with over 1,000 Boys since we kicked off the
                 Project and we&apos;ve been able to get reasonable value from
@@ -284,7 +284,7 @@ const page = () => {
               <p className="mt-5 text-secondary text-xl">
                 Where Rape will be Rape, irrespective of the Gender
               </p>
-              <ul className="list-disc pl-10 text-secondary text-xl leading-9 md:pr-8 mt-2">
+              <ul className="list-disc pl-10 text-secondary text-xl leading-9 lg:pr-8 mt-2">
                 <li className="">
                   Create a channel for pyscho-socio support. Engagement and
                   connection with Psychologists, Psychotherapists & Counsellors.
@@ -297,7 +297,7 @@ const page = () => {
                 <li>Toll free number</li>
               </ul>
             </div>
-            <div className="w-full md:w-1/2">
+            <div className="w-full lg:w-1/2">
               <Image
                 src="/images/advocacy1.png"
                 alt=""
