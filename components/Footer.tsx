@@ -16,15 +16,15 @@ const Footer = () => {
     }
 
   return (
-    <div className="mt-32 bg-[#161616] text-[#F7F8FA]">
+    <div className="mt-16 md:mt-32 bg-[#161616] text-[#F7F8FA]">
       <div className="px-16 pt-24 3b-5">
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col md:flex-row justify-between items-center">
         <div className="flex items-start gap-10">
           <Image
-            src="/svgs/logo2.svg"
+            src="/images/logo2.png"
             alt="boys quarters logo"
             width={150}
-            height={150}
+            height={100}
             />
           <div>
             <p className="flex gap-3 items-center">

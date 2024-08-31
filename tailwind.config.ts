@@ -1,6 +1,6 @@
-import type { Config } from 'tailwindcss';
+import type { Config } from 'tailwindcss'
 
-const config = {
+const config: Config = {
   darkMode: ['class'],
   content: [
     './pages/**/*.{ts,tsx}',
@@ -24,18 +24,15 @@ const config = {
         lightOrange: '#F2EFEA', // Light orange color
         lightGrey: '#828282', // Light grey color
         lightishOrange: 'rgba(254, 173, 58, 0.1)',
+        customGray: 'rgba(47, 47, 47, 0.97)'
       },
       keyframes: {
         'accordion-down': {
           from: { height: '0' },
-          to: {
-            height: 'var(--radix-accordion-content-height)',
-          },
+          to: { height: 'var(--radix-accordion-content-height)' },
         },
         'accordion-up': {
-          from: {
-            height: 'var(--radix-accordion-content-height)',
-          },
+          from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: '0' },
         },
       },
@@ -46,6 +43,6 @@ const config = {
     },
   },
   plugins: [require('tailwindcss-animate')],
-} satisfies Config;
+}
 
-export default config;
+export default config
