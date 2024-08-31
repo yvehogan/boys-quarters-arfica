@@ -20,7 +20,7 @@ export default function App() {
   ];
 
   const isAboutUs =
-    pathname !== '/' && '/pillars-of-impact';
+    pathname !== '/' && pathname !== '/pillars-of-impact';
 
   return (
     <div>
