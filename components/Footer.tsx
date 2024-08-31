@@ -55,7 +55,7 @@ const Footer = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Email address"
-                className="py-4 px-24 rounded-lg"
+                className="py-4 px-14 md:px-24 rounded-lg"
                 required
               />
               <button type="submit" className="bg-primary text-white py-2 px-6 rounded-lg absolute right-1 bottom-1">

@@ -51,8 +51,8 @@ export default function Home() {
         </div>
       </main>
       <div className="w-full flex flex-col lg:flex-row justify-between py-10 lg:py-32 px-8 lg:px-20 gap-10">
-        <div className="w-full lg:w-[45%] flex">
-          <div className="w-full  justify-between">
+        <div className="w-full lg:w-[45%] flex gap-4">
+          <div className="w-full justify-between">
             <div className="flex items-center gap-5">
               <LongGrid />
               <div>
