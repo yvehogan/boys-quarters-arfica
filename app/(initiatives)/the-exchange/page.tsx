@@ -90,7 +90,7 @@ const TheExchange = () => {
         </div>
       </div>
       <div className="flex flex-col items-center mb-16">
-            <h3 className="text-secondary font-semibold text-5xl lg:text-[64px] md:leading-[78px] text-center">
+            <h3 className="text-secondary font-semibold text-4xl lg:text-[64px] lg:leading-[78px] text-center">
               The Exchange Lagos
             </h3>
             <div className="h-2 w-16 bg-primary"></div>
