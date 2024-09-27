@@ -19,11 +19,11 @@ export default function Home() {
   return (
     <>
       <main className="bg-[url('/images/hero.png')] bg-cover bg-center h-screen">
-        <div className="w-full px-8 lg:px-20 h-full flex flex-col">
+        <div className="w-full px-4 lg:px-20 h-full flex flex-col">
           <Header />
           <div className="flex-grow flex items-center">
             <div className="max-w-lg">
-              <h1 className="text-white font-bold text-[53px] leading-tight mb-5">
+              <h1 className="text-white font-bold text-4xl md:text-[53px] leading-tight mb-5">
                 Empowering African Boys for a Brighter Future
               </h1>
               <p className="text-white mb-10 text-[20px]">
@@ -56,14 +56,14 @@ export default function Home() {
             <div className="flex items-center gap-5">
               <LongGrid />
               <div>
-                <p className="text-[53px] font-medium text-secondary">5,850</p>
+                <p className="text-4xl md:text-[53px] font-medium text-secondary">5,850</p>
                 <p className="text-lightGrey text-[20px]">Boys Engaged</p>
               </div>
             </div>
             <div className="flex items-center gap-5 mt-24">
               <LongGrid />
               <div>
-                <p className="text-[53px] font-medium text-secondary ">82</p>
+                <p className="text-4xl md:text-[53px] font-medium text-secondary ">82</p>
                 <p className="text-lightGrey text-[20px]">
                   Successful Campaigns
                 </p>
@@ -74,7 +74,7 @@ export default function Home() {
             <div className="flex items-center gap-5">
               <LongGrid />
               <div>
-                <p className="text-[53px] font-medium text-secondary">18</p>
+                <p className="text-4xl md:text-[53px] font-medium text-secondary">18</p>
                 <p className="text-lightGrey text-[20px]">
                   Incredible Volunteer
                 </p>
@@ -83,7 +83,7 @@ export default function Home() {
             <div className="flex items-center gap-5 mt-24">
               <LongGrid />
               <div>
-                <p className="text-[53px] font-medium text-secondary ">$140k</p>
+                <p className="text-4xl md:text-[53px] font-medium text-secondary ">$140k</p>
                 <p className="text-lightGrey text-[20px]">Donated</p>
               </div>
             </div>
@@ -162,7 +162,7 @@ export default function Home() {
           <h4 className="text-[#BCB078] text-[16px] md:mt-16">
             PILLARS OF IMPACT
           </h4>
-          <p className="text-secondary font-semibold text-[53px]">
+          <p className="text-secondary font-semibold text-5xl md:text-[53px]">
             Our Pillars Of Impact
           </p>
           <p className="text-secondary text-xl leading-9 md:pr-20 mb-8">
@@ -182,8 +182,8 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-lightOrange flex flex-col justify-center text-center">
-        <div className="py-24 max-w-6xl mx-auto md:px-10">
-        <h2 className="text-[32px] lg:text-[53px] font-semibold text-secondary">Join us on this transformative journey to redefine masculinity in Africa.</h2>
+        <div className="py-24 max-w-6xl mx-auto px-5 md:px-10">
+        <h2 className="text-4xl lg:text-[53px] font-semibold text-secondary">Join us on this transformative journey to redefine masculinity in Africa.</h2>
         <p className="text-secondary text-lg lg:px-28 mt-3">Together, we can empower boys to dream big, break barriers, and build a better tomorrow for themselves and their communities.</p>
         <div className="flex justify-center mt-14 gap-5">
                 <Button
