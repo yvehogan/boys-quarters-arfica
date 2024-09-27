@@ -162,7 +162,7 @@ export default function Home() {
           <h4 className="text-[#BCB078] text-[16px] md:mt-16">
             PILLARS OF IMPACT
           </h4>
-          <p className="text-secondary font-semibold text-5xl md:text-[53px]">
+          <p className="text-secondary font-semibold text-4xl md:text-[53px]">
             Our Pillars Of Impact
           </p>
           <p className="text-secondary text-xl leading-9 md:pr-20 mb-8">
@@ -182,7 +182,7 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-lightOrange flex flex-col justify-center text-center">
-        <div className="py-24 max-w-6xl mx-auto px-5 md:px-10">
+        <div className="py-24 max-w-6xl mx-auto px-3 md:px-10">
         <h2 className="text-4xl lg:text-[53px] font-semibold text-secondary">Join us on this transformative journey to redefine masculinity in Africa.</h2>
         <p className="text-secondary text-lg lg:px-28 mt-3">Together, we can empower boys to dream big, break barriers, and build a better tomorrow for themselves and their communities.</p>
         <div className="flex justify-center mt-14 gap-5">
