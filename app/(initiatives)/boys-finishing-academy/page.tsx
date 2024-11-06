@@ -2,40 +2,34 @@ import React from "react";
 import Header from "@/components/Header";
 import Image from "next/image";
 import { academy } from "@/public/exports";
+import InitiativesDropdown from "@/components/InitiativesDropdown";
 
 const FinishingAcademy = () => {
   return (
-    <div className="bg-white pb-20">
-      <div className="">
-        <h3 className=" text-secondary font-bold text-5xl md:text-[64px] lg:leading-[78px] max-w-3xl">
-          THE BOYS FINISHING ACADEMY
-        </h3>
-        <div className="h-1.5 w-12 bg-primary mt-2 mb-4"></div>
-        <div className="w-full pt-20 flex flex-col lg:flex-row gap-10 justify-between items-center">
-          <div className="w-full lg:w-1/2">
-            <Image
-              src={academy}
-              alt=""
-              layout="responsive"
-            />
-          </div>
-          <div className="w-full lg:w-1/2">
-            <p className="text-secondary text-xl leading-9 mb-1">
-              Boyformation Academy is the organization&apos;s custom-curated
+    <>
+      <div className="pb-10 text-secondary w-full md:px-28 px-4 mt-24">
+        <div className="flex flex-col md:flex-row justify-between">
+          <div className="w-full md:w-1/2 mb-10 md:mb-0">
+            <InitiativesDropdown />
+            <h1 className="text-secondary font-bold text-4xl md:text-[50px] md:leading-[78px] mt-10">
+              The Boys Finishing Academy
+            </h1>
+            <p className="mt-4 text-lg">
+              Boyformation Academy is the organization&rsquo;s custom-curated
               boot camp for boys to re-educate them and help them unlearn
               age-long ideologies or debilitating value system. The academy
               seeks to address issues around how Boys see leadership, gender
               roles and their role in ensuring we arrive at the future we
               earnestly desire.
             </p>
-            <p className="text-secondary text-xl leading-9">
+            <p className="mt-4 text-lg">
               The module of academy encompasses personal development, dressing,
               gender base violence, sexual abuse of Boys, relationship with
               girl, being domesticated, fatherhood and husband-hood, personal
               hygiene and other future-driven materials.
             </p>
-            <p className="text-secondary text-xl leading-9">
-              A fall off of this Academy is the <span className="font-semibold">Men.Start.Action Project-</span> On
+            <p className="mt-4 text-lg">
+              A fall off of this Academy is the Men.Start.Action Project- On
               this Project, Boys are rallied to raise funds for the procurement
               of Menstrual Pads for Girls in their locality. They raise the
               funds and go ahead to present these pads to them on a need basis,
@@ -44,9 +38,18 @@ const FinishingAcademy = () => {
               girls and women.
             </p>
           </div>
+          <div className="">
+            <Image
+              src={academy}
+              width={500}
+              height={500}
+              alt="speaker"
+              priority
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

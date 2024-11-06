@@ -21,7 +21,7 @@ const config: Config = {
       colors: {
         primary: '#FEAD3A', //Primary color
         secondary: '#2F2F2F', // BLACK color
-        lightOrange: '#F2EFEA', // Light orange color
+        darkBlue: '#16222E', // dark blue color
         lightGrey: '#828282', // Light grey color
         lightishOrange: 'rgba(254, 173, 58, 0.1)',
         customGray: 'rgba(47, 47, 47, 0.97)'
