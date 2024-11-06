@@ -2,7 +2,7 @@ import React from "react";
 
 const WhyThis = () => {
   return (
-    <section className="bg-darkBlue flex items-center h-screen">
+    <section className="bg-darkBlue flex items-center py-24">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8">
           {/* Left Column */}

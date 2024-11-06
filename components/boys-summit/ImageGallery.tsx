@@ -66,10 +66,10 @@ const ImageGallery: React.FC = () => {
   const currentImages = images[activeLocation];
 
   return (
-    <Card className="w-full py-24">
+    <Card className="w-full py-24 md:px-28 px-4">
       <CardContent className="">
         {/* Location Navigation */}
-        <div className="flex justify-end gap-4 mb-6 md:pr-20">
+        <div className="flex justify-center md:justify-end gap-4 mb-6 md:pr-10">
           {locations.map((location) => (
             <LocationButton
               key={location}
@@ -80,8 +80,7 @@ const ImageGallery: React.FC = () => {
           ))}
         </div>
 
-        {/* Centered Grid Container */}
-          <div className="flex justify-center gap-7 items-center flex-wrap md:px-28 px-4">
+          <div className="flex justify-center gap-7 items-center flex-wrap">
             {currentImages.map((image, index) => (
               <div
                 key={index}
