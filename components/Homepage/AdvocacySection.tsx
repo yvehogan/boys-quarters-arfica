@@ -2,7 +2,7 @@ import React from "react";
 
 const AdvocacySection = () => {
   return (
-    <section className="bg-white flex items-center py-24">
+    <section className="bg-white flex items-center py-32">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-6">
           {/* Left Column */}

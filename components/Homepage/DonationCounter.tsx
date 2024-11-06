@@ -14,7 +14,7 @@ const DonationCounter: React.FC = () => {
   };
 
   return (
-    <div className="relative justify-center md:justify-between items-center px-4 md:px-24 py-24 h-[50]  mt-24">
+    <div className="relative justify-center md:justify-between items-center px-4 md:px-24 py-32 h-[50]  mt-24">
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/donation-counter.png"

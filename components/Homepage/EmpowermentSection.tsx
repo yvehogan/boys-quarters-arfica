@@ -2,7 +2,7 @@ import React from "react";
 
 const EmpowermentSection = () => {
   return (
-    <section className="bg-darkBlue flex items-center py-24">
+    <section className="bg-darkBlue flex items-center py-32">
       <div className="md:px-28 px-4">
         <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-6">
