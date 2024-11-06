@@ -14,10 +14,10 @@ const Layout = ({
   return (
     <div
       className={` ${
-        exclude ? '' : 'md:px-20 px-8'
+        exclude ? '' : ''
       } flex flex-col min-h-screen relative  bg-white w-full`}
     >
-      <Header />
+      <Header className='px-8'/>
       <div className='flex-grow overflow-auto relative'>
         {children}
       </div>

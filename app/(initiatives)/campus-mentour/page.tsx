@@ -1,21 +1,26 @@
 import React from "react";
 import Header from "@/components/Header";
 import Image from "next/image";
+import InitiativesDropdown from "@/components/InitiativesDropdown";
 
 
 const CampusMentour = () => {
   return (
-    <div className="bg-white">
-      <div className="">
-        <h3 className="text-[32px] text-secondary font-bold text-5xl md:text-[64px] md:leading-[78px]'">THE CAMPUS MENTOUR</h3>
-        <div className="h-1 w-12 bg-primary mt-2 mb-4"></div>
-        <div className="flex flex-col items-center my-24">
-        <Image src="/images/campus-mentour.png" alt="" width={600} height={400}  className="mb-16"/>
-        <Image src="/images/campus-mentour2.png" alt="" width={600} height={400} />
+    <div className="bg-white pb-10 text-secondary w-full md:px-28 px-4 mt-24">
+        <div className="flex flex-col md:flex-row justify-between">
+          <div className=" md:w-1/2">
+            <InitiativesDropdown />
+            <h1 className="text-secondary font-bold text-4xl md:text-[50px] md:leading-[78px] mt-10">
+              The Campus Men Tour
+            </h1>
+            <div className="flex flex-col md:flex-row gap-5 justify-between items-center mt-16">
+        <Image src="/images/campus-mentour.png" alt="" width={600} height={600}  className=""/>
+        <Image src="/images/campus-mentour2.png" alt="" width={600} height={600} />
+        </div>
+          </div>
         </div>
       </div>
-      
-    </div>
+    
   );
 };
 
