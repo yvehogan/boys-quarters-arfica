@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <HeroSectionCarousel/>
-      <div className="w-full bg-[#FAFAFA] py-10 lg:py-28 px-4 lg:28">
+      <div className="w-full bg-[#FAFAFA] py-10 lg:py-28 px-4 md:px-28">
       <StatsDisplay />
       <AboutSection />
       </div>
