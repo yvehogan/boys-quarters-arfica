@@ -144,8 +144,6 @@ const ImageGallery: React.FC = () => {
         ))}
       </div>
     </div>
-
-export default Gallery;
       </CardContent>
     </Card>
   );

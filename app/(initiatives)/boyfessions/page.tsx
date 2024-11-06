@@ -6,7 +6,7 @@ import React from "react";
 const Boyfessions = () => {
   return (
     <div className="bg-white w-full md:px-28 px-4 mt-24 pb-10 text-secondary">
-      <div className="flex flex-col md:flex-row justify-between mb-12">
+      <div className="flex flex-col md:flex-row justify-between">
         <div className="md:w-1/2">
           <InitiativesDropdown />
           <h1 className="text-secondary font-bold text-4xl md:text-[50px] md:leading-[78px] mt-10">

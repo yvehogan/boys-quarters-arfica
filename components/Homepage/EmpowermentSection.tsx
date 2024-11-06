@@ -5,7 +5,6 @@ const EmpowermentSection = () => {
     <section className="bg-darkBlue flex items-center py-24">
       <div className="md:px-28 px-4">
         <div className="grid md:grid-cols-2 gap-8">
-          {/* Left Column */}
             <div className="space-y-6">
               <div className="flex items-center gap-4">
                 <span className="text-sm uppercase tracking-wider text-white font-bold whitespace-nowrap">
