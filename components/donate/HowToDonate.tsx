@@ -1,38 +1,59 @@
+"use client"
 import React from "react";
+import { Button } from "../ui/button";
+import Link from "next/link";
+import useMediaQuery from "../hooks/useMediaQuery";
 
 const HowToDonate = () => {
-  return (
-    <section className="bg-darkBlue flex items-center py-32 mt-24">
-      <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-8">
-          {/* Left Column */}
-          <div>
-            <div className="space-y-6">
-              <div className="flex items-center gap-4">
-                <span className="text-sm uppercase tracking-wider text-white font-bold whitespace-nowrap">
-                  HOW TO DONATE
-                </span>
-                <div className="h-px bg-white w-full max-w-[400px]"></div>
-              </div>
-            </div>
-          </div>
+  const { isDesktop } = useMediaQuery('(min-width: 1400px)');
 
-          {/* Right Column */}
-          <div className="text-white space-y-6">
-            <p className="">
-            Donations can be made via bank transfer or cheque to the bank detailed outlined below:
-            </p>
-            <p className="mb-2">
-            Bank Name: Stanbic IBTC Bank Plc
-            </p>
-            <p className="">
-            Account Number: 0034494786
-            </p>
-            <p className="mb-2">
-            Account Name: Boy Child Reformation Initiative
-            </p>
+  return (
+    <section className="bg-white flex justify-center items-center py-32 mt-32 relative">
+      {isDesktop && (
+        <>
+          <div className="absolute top-10 left-10">
+            <img
+              src="/images/donate/donate1.png"
+              alt="Empowering boys"
+              className="w-40 h-50 object-cover rounded-md"
+            />
           </div>
-        </div>
+          <div className="absolute top-10 right-10">
+            <img
+              src="/images/donate/donate2.png"
+              alt="Educating boys"
+              className="w-40 h-50 object-cover rounded-md"
+            />
+          </div>
+          <div className="absolute bottom-0 left-52">
+            <img
+              src="/images/donate/donate3.png"
+              alt="Nurturing boys"
+              className="w-40 h-50 object-cover rounded-md"
+            />
+          </div>
+          <div className="absolute bottom-0 right-52">
+            <img
+              src="/images/donate/donate4.png"
+              alt="Supporting boys"
+              className="w-40 h-50 object-cover rounded-md"
+            />
+          </div>
+        </>
+      )}
+
+      <div className="flex flex-col justify-center items-center">
+        <p className="font-semibold text-3xl text-center leading-relaxed mb-5 max-w-3xl">
+          Your contribution helps us nurture, educate, and empower boys across
+          Africa to reach their full potential.
+        </p>
+        <Button
+          className="bg-primary text-white hover:bg-primary hover:opacity-70"
+          size="lg"
+          asChild
+        >
+          <Link href="/donate">Donate</Link>
+        </Button>
       </div>
     </section>
   );

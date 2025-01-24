@@ -1,13 +1,12 @@
 import DonateOnline from "@/components/donate/DonateOnline";
 import HowToDonate from "@/components/donate/HowToDonate";
-import HowToHelp from "@/components/donate/HowToHelp";
 import Image from "next/image";
 import React from "react";
 
 const Donate = () => {
   return (
     <>
-    <div className="bg-white md:px-28 px-4">
+    <div className="bg-white md:px-28 px-4 max-w-[1440px] mx-auto">
       <div className="w-full md:max-w-4xl">
         <h2 className="text-secondary font-bold text-4xl md:text-[50px] mb-10">
           Transform a boy, touch the world
@@ -36,10 +35,9 @@ const Donate = () => {
         priority={false}
       />
     </div>
-    </div>
     <HowToDonate />
     <DonateOnline />
-    <HowToHelp />
+    </div>
     </>
 
   );

@@ -1,8 +1,8 @@
 'use client';
-
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { usePathname } from 'next/navigation';
 import DonationCounter from '@/components/Homepage/DonationCounter';
 
 const Layout = ({
@@ -10,6 +10,8 @@ const Layout = ({
 }: {
   children: React.ReactNode;
 }) => {
+  const pathname = usePathname();
+  const isDonatePage = pathname === '/donate';
   return (
     <div className="flex flex-col min-h-screen relative bg-white w-full">
       <Header className="px-10"/>
@@ -18,7 +20,7 @@ const Layout = ({
         </div>
         {children}
       </div>
-      <DonationCounter />
+      {!isDonatePage && <DonationCounter />}
       <Footer />
     </div>
   );
