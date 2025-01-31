@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -43,21 +43,19 @@ export default function Header({ className = "" }: HeaderProps) {
           {/* Desktop Navigation */}
           <NavItems isHomePage={isHomePage} />
           <div className="hidden lg:flex gap-8">
-            <Button
-              className="bg-transparent border border-primary text-primary"
-              size="lg"
-              variant="outlinePrimary"
+            <a
+              href="https://bit.ly/boys-quarter-africa-volunteer"
+              className="bg-transparent border border-primary text-primary rounded-md px-6 py-3 text-lg hover:bg-primary/10 hover:text-white transition-colors duration-300"
+              target="_blank"
             >
               Get Involved
-            </Button>
+            </a>
             <Button
               className="bg-primary text-white hover:bg-primary hover:opacity-70"
               size="lg"
               asChild
             >
-              <Link href="/donate">
-                Donate
-              </Link>
+              <Link href="/donate">Donate</Link>
             </Button>
           </div>
         </div>
@@ -67,18 +65,19 @@ export default function Header({ className = "" }: HeaderProps) {
           <div className="lg:hidden bg-white text-black p-4">
             <NavItems mobile isHomePage={isHomePage} />
             <div className="flex flex-col gap-4 mt-4">
-              <Button
-                className="bg-transparent border border-primary text-primary w-full"
-                size="sm"
-                variant="outlinePrimary"
+              <a
+                href="https://bit.ly/boys-quarter-africa-volunteer"
+                className="bg-transparent border border-primary text-primary rounded-md px-6 py-3 text-lg hover:bg-primary/10 hover:text-white transition-colors duration-300"
+                target="_blank"
               >
                 Get Involved
-              </Button>
+              </a>
               <Button
                 className="bg-primary text-white hover:bg-primary hover:opacity-70 w-full"
                 size="sm"
-              >
-                Donate
+                asChild
+                >
+                  <Link href="/donate">Donate</Link>
               </Button>
             </div>
           </div>
@@ -102,12 +101,17 @@ const NavItems: React.FC<NavItemsProps> = ({ mobile = false, isHomePage }) => {
   };
 
   return (
-    <div className={`${mobile ? "" : "hidden lg:flex items-center space-x-14"}`}>
+    <div
+      className={`${mobile ? "" : "hidden lg:flex items-center space-x-14"}`}
+    >
       <Link
         href="/"
         className={`relative pb-1 font-semibold ${
           pathname === "/" ? "font-bold" : ""
-        } ${mobile ? "block py-2" : ""} ${getTextColorClass(mobile, isHomePage)}`}
+        } ${mobile ? "block py-2" : ""} ${getTextColorClass(
+          mobile,
+          isHomePage
+        )}`}
       >
         Home
         {pathname === "/" && !mobile && (
@@ -119,7 +123,10 @@ const NavItems: React.FC<NavItemsProps> = ({ mobile = false, isHomePage }) => {
         href="/resources"
         className={`relative pb-1 font-semibold ${
           pathname === "/resources" ? "font-bold" : ""
-        } ${mobile ? "block py-2" : ""} ${getTextColorClass(mobile, isHomePage)}`}
+        } ${mobile ? "block py-2" : ""} ${getTextColorClass(
+          mobile,
+          isHomePage
+        )}`}
       >
         Resources
         {pathname === "/resources" && !mobile && (
@@ -131,7 +138,10 @@ const NavItems: React.FC<NavItemsProps> = ({ mobile = false, isHomePage }) => {
         href="/about-us"
         className={`relative pb-1 font-semibold ${
           pathname === "/about-us" ? "font-bold" : ""
-        } ${mobile ? "block py-2" : ""} ${getTextColorClass(mobile, isHomePage)}`}
+        } ${mobile ? "block py-2" : ""} ${getTextColorClass(
+          mobile,
+          isHomePage
+        )}`}
       >
         About Us
         {pathname === "/about-us" && !mobile && (

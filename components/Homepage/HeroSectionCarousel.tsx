@@ -107,23 +107,22 @@ const HeroSectionCarousel: React.FC = () => {
               advocating for a new generation of boys, guiding them to
               transition purposefully from boyhood to exceptional manhood.
             </p>
-            <div className="flex gap-5">
-              <Button
-                className="bg-transparent border border-primary text-primary px-10 py-6"
-                size="lg"
-                variant="outlinePrimary"
+        
+            <div className="flex flex-row md:flex-row gap-5">
+              <a
+                href="https://bit.ly/boys-quarter-africa-volunteer"
+                className="bg-transparent border border-primary text-primary rounded-md px-5 py-3 text-lg hover:bg-primary/10 hover:text-white transition-colors duration-300"
+                target="_blank"
               >
                 Get Involved
-              </Button>
+              </a>
               <Button
-              className="bg-primary text-white hover:bg-primary hover:opacity-70"
-              size="lg"
-              asChild
-            >
-              <Link href="/donate">
-              Donate
-              </Link>
-            </Button>
+                className="bg-primary text-white hover:bg-primary hover:opacity-70"
+                size="lg"
+                asChild
+              >
+                <Link href="/donate">Donate</Link>
+              </Button>
             </div>
           </div>
         </div>
