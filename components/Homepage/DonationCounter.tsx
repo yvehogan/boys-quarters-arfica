@@ -34,8 +34,11 @@ const DonationCounter: React.FC = () => {
               className="bg-transparent border border-primary text-primary w-full "
               size="lg"
               variant="outlinePrimary"
+              asChild
             >
+              <Link href='https://bit.ly/boys-quarter-africa-volunteer'>
               Get Involved
+              </Link>
             </Button>
             <Button
               className="bg-primary text-white hover:bg-primary hover:opacity-70 w-full mt-5 md:mt-0"
