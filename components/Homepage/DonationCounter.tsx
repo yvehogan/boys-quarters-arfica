@@ -21,6 +21,7 @@ const DonationCounter: React.FC = () => {
           alt='Background'
           layout='fill'
           objectFit='cover'
+          priority
         />
       </div>
 

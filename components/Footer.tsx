@@ -45,6 +45,7 @@ const Footer: React.FC<footerProps> = ({ className }) => {
               width={100}
               height={100}
               className='mx-auto sm:mx-0'
+              priority
             />
             <div className='space-y-4 text-center sm:text-left'>
               <p className='flex gap-2 items-center justify-center sm:justify-start'>

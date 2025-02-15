@@ -45,6 +45,7 @@ export default function Header({
               alt='boys quarters logo'
               width={200}
               height={70}
+              priority
             />
           </Link>
 

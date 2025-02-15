@@ -91,6 +91,7 @@ const Event = () => {
               layout='fill'
               objectFit='cover'
               className='rounded-[19px]'
+              priority
             />
           </div>
         </div>
