@@ -27,6 +27,7 @@ const AboutTeam = () => {
           // layout="fill"
           objectFit='contain'
           className='rounded-lg'
+          priority
         />
         {/* </div> */}
         {/* <div className="relative w-full md:w-1/2 aspect-square"> */}
@@ -38,6 +39,7 @@ const AboutTeam = () => {
           // layout="fill"
           objectFit='contain'
           className='rounded-lg'
+          priority
         />
         {/* </div> */}
       </div>

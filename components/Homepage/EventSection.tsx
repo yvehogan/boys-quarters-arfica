@@ -48,6 +48,7 @@ const EventSection = () => {
             layout='fill'
             objectFit='cover'
             className='rounded-3xl'
+            priority
           />
         </div>
       </div>
