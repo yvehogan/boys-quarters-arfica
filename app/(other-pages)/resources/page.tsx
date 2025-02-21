@@ -1,5 +1,3 @@
-import { Button } from '@/components/ui/button';
-import { ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react';
 
@@ -114,28 +112,33 @@ const Resources: React.FC = () => {
             <div className='grid md:grid-cols-2 gap-24'>
               <div className='space-y-6'>
                 <h2 className='text-[40px] font-bold text-secondary'>
-                  Boyfessions
+                  Our Impact Report
                 </h2>
                 <p className='text-secondary leading-relaxed text-lg'>
-                  The Boyfessions is a compendium of healthy
-                  confessions for Boys and everyone who
-                  loves them. This book helps provide
-                  clarity on the issue of Sexual abuse of
-                  the Boy Child and also profers answers to
-                  some teething issues faced by the Boy
-                  Child tribe. This mini-book would serve as
-                  a crusade mechanism in furthering our
-                  Strategic Pillars of impact; Leadership,
-                  Education, Empowerment and Advocacy.
-                  Download and Enjoy the read!
+                  This Impact Report is a reflection of our
+                  journey so far, a comprehensive look at
+                  the lives we have touched, the initiatives
+                  we have championed, and the partnerships
+                  that have strengthened our mission. It
+                  highlights our achievements, the lessons
+                  we have learned, and the future we
+                  envision. 
                 </p>
-                <Button
-                  className='bg-transparent border border-primary text-primary px-10 py-6 flex items-center'
-                  size='lg'
-                  variant='outlinePrimary'
+                <p className='text-secondary leading-relaxed text-lg'>
+                  As we prepare to relaunch BQA with renewed
+                  energy and purpose, this report stands as
+                  both a celebration of our past successes
+                  and a commitment to the transformative
+                  work that lies ahead.
+                </p>
+
+                <a
+                  href='/Boys Quarters Africa.pdf'
+                  download
+                  className='bg-transparent border border-primary text-primary px-10 py-6 flex items-center h-11 rounded-lg  max-w-[270px]'
                 >
-                  Download Boyfessions
-                </Button>
+                  Download Impact Report
+                </a>
               </div>
 
               <div className='relative h-[400px] w-full'>
@@ -145,6 +148,7 @@ const Resources: React.FC = () => {
                   layout='fill'
                   objectFit='cover'
                   priority
+                  className='rounded-2xl'
                 />
               </div>
             </div>
