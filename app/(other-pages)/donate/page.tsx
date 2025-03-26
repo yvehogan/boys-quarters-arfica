@@ -75,7 +75,7 @@ const Donate = () => {
                 src='/icons/flutter.svg'
                 alt='Flutterwave'
                 className='w-6'
-              />{' '}
+              />
               <div className='w-full mt-4 flex justify-between'>
                 Flutterwave
                 <ArrowRightIcon />
@@ -100,7 +100,7 @@ const Donate = () => {
                 src='/icons/bank.svg'
                 alt='Bank Transfer'
                 className='w-6'
-              />{' '}
+              />
               <div className='w-full mt-4 flex justify-between'>
                 Bank Transfer
                 <ArrowRightIcon />

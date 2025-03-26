@@ -10,7 +10,7 @@ const EventSection = () => {
   const router = useRouter();
   return (
     <div className='mt-20'>
-      <div className='grid md:grid-cols-2 gap-24 items-center'>
+      <div className='grid md:grid-cols-2 gap-24 items-center bg-[#F7F4F0] p-5 md:p-10 rounded-[50px]'>
         <div className='space-y-6'>
           <div className='flex items-center gap-4'>
             <span className='text-sm uppercase tracking-wider text-[#161616] font-bold whitespace-nowrap'>
@@ -32,11 +32,11 @@ const EventSection = () => {
           </p>
           <Button
             onClick={() => router.push('/event')}
-            className='bg-transparent border border-primary text-primary px-10 py-6 flex items-center'
+            className=' text-white px-10 py-6 flex items-center'
             size='lg'
-            variant='outlinePrimary'
+            variant='default'
           >
-            Register Now{' '}
+            Register Now
             <ChevronRight className='h-4 w-4' />
           </Button>
         </div>

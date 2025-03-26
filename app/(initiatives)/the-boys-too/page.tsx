@@ -34,7 +34,7 @@ const BoysToo = () => {
               size="sm"
               variant="outlinePrimary"
             >
-              Download The #BoysToo Campaign Report
+             LEARN MORE
             </Button>
         </div>
         <div className="">

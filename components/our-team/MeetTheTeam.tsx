@@ -20,13 +20,13 @@ const trustees: Trustee[] = [
     role: 'Chief Operations Officer',
   },
   {
-    name: 'Busayo Fache',
-    image: '/images/busayo_fache.png',
-    role: 'Program Manager',
+    name: 'Olufolake Zion',
+    image: '/images/folake.png',
+    role: 'Programs Manager',
   },
   {
-    name: 'Joy James',
-    image: '/images/joy.png',
+    name: 'Faith Olagoke',
+    image: '/images/faith.png',
     role: 'Brand & Comm. Manager',
   },
   {
@@ -35,9 +35,9 @@ const trustees: Trustee[] = [
     role: 'Finance Manager',
   },
   {
-    name: 'Nifemi Onifade',
-    image: '/images/nifemi.png',
-    role: 'Civic Engagement Manager',
+    name: 'Sophia Sadiq',
+    image: '/images/sophia.png',
+    role: 'Program and Partnership Manager',
   },
   {
     name: 'Jude Akinyemi',

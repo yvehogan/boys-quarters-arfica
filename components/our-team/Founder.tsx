@@ -46,7 +46,7 @@ const FounderSection = () => {
           </p>
         </div>
 
-        <div className='relative h-[600px] w-full'>
+        <div className='relative h-[650px] w-full'>
           <Image
             src='/images/founder.png'
             alt='solomon Ayodele'

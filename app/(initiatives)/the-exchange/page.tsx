@@ -5,7 +5,7 @@ import InitiativesDropdown from "@/components/InitiativesDropdown";
 import { Button } from "@/components/ui/button";
 import WhyThis from "@/components/the-exchange/WhyThis";
 import ImageGallery from "@/components/the-exchange/ImageGallery";
-import VideoGallery from "@/components/the-exchange/VideoGallery";
+// import VideoGallery from "@/components/the-exchange/VideoGallery";
 
 const images = [
   { src: "/images/exchange3.png", alt: "Activity" },
@@ -51,7 +51,7 @@ const TheExchange = () => {
         </div>
       </div>
       <WhyThis />
-      <VideoGallery />
+      {/* <VideoGallery /> */}
       <ImageGallery />
     </>
   );
