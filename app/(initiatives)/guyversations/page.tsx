@@ -1,6 +1,7 @@
 import { guestTopics } from "@/components/data/initiatives";
 import Header from "@/components/Header";
 import InitiativesDropdown from "@/components/InitiativesDropdown";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import React from "react";
 
@@ -15,34 +16,28 @@ const GuyVersations = () => {
               Guyversations
             </h1>
             <p className="mt-4 text-lg">
-              There are basically three elements to these men-themed
-              conversations; Uninhibited Openness, Beautiful Vulnerabilities and
-              of course, garnering a digital safe space for young men.
+            Every man carries weight he wasn't taught how to put down. Guyversations creates brotherhood circles where men (18+) can:
             </p>
-            <p className="mt-4 text-lg">
-            Since the maiden edition on the 12th of April, 2020, we&apos;ve had about 15 Guests, across different walks of life, discussing issues that relate to GUYS! The cumulative digital footprint is about 2,500 audience and traction gained shows the quantum of impact on the minds of young men.
-            </p>
-            <p className="mt-4 text-lg">
-            Previous guests and topics are highlighted below:
-            </p>
-            <ul className="text-secondary space-y-6 list-disc mt-4 pl-5 text-lg">
-                <li className="">UNDERSTANDING THE UNTOLD STRUGGLES OF SEXUALITY by Bisi Alimi.</li>
-                <li className="">I WAN BLOW; UNDERSTANDING THE ESSENCE OF FAME & IMPACT by Dr. Wilson Joel.</li>
-                <li className="">I WAN BLOW II; UNDERSTANDING THE ESSENCE OF FAME & IMPACT by Gaise Baba.</li>
-                <li className="">BOYS WILL BE BOYS; TRACING THE ROOT OF POWER & TOXIC MASCULINITY by Solomon Buchi.</li>
-                <li className="">FACING AFRICA&apos;S GOLIATH; YOUR DESIGNATION ON THE BATTLE FIELD by Kayode Adeniji.</li>
-                <li className="">NECESSARY REBELLION; MASTERING THE ART OF DEFYING THE NORM by Jimi Odukoya.</li>
-                <li className="">W.W.W. (WETIN WOMEN WANT SEF?) by Toju Dami-Oluwatoyinbo.</li>
-                <li className="">W.W.W. II (WETIN WOMEN WANT SEF?) by Tolulope &lsquo;Solutions&rsquo; Adejumo.</li>
-                <li className="">FUTUR NOLOGY; PLUGGING INTO THE FUTURE WE ARE ALREADY LATE FOR by Kitan David.</li>
-                <li className="">POP CULTURE & THE REDEFINITION OF THE 21ST CENTURY MAN by Olumide Oworu, Gaffy & PartyJollof.</li>
+            <ul className="text-secondary space-y-6 list-disc mt-4 pl-5 text-lg mb-10">
+                <li className="">Speak freely about pressures, fears and silent struggles.</li>
+                <li className="">Learn & unlearn outdated scripts about masculinity.</li>
+                <li className="">Connect with brothers walking similar paths.</li>
+                <li className="">Grow tools for emotional resilience, relationships & purpose HOW WE MEET:</li>
+                <li className="">In-Person Sessions: Monthly curated conversations with psychologists and mentors.</li>
             </ul>
+            <Button
+              className=""
+              size="sm"
+              variant="default"
+            >
+             Register Now
+            </Button>
           </div>
-          <div className="">
+          <div className="border border-primary rounded-lg p-2">
             <Image
               src="/images/guyversations.png"
-              width={600}
-              height={600}
+              width={550}
+              height={500}
               alt="speaker"
               priority
             />
