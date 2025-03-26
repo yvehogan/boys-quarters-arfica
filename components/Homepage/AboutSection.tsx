@@ -27,9 +27,9 @@ const AboutSection = () => {
           </div>
 
           <h2 className='text-[40px] font-semibold text-secondary'>
-            Our Origin Story
+            Our Budding Story
           </h2>
-          <p className='text-secondary leading-relaxed text-lg'>
+          <p className='text-secondary leading-reslaxed text-lg'>
             Boys Quarters Africa is a volunteer driven
             Boy-child transformation movement, with the
             vision to be an inspiring bridge of transition

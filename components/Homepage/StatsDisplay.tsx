@@ -22,20 +22,20 @@ const StatItem: React.FC<StatItemProps> = ({
 const StatsDisplay = () => {
   const stats = [
     {
-      value: '50,000+',
+      value: '500,000',
       label: 'Boys Engaged',
     },
     {
-      value: '150+',
-      label: 'Volunteers',
+      value: '20,000',
+      label: 'Men Engaged',
     },
     {
-      value: '50,000+',
-      label: 'Campaigns across Africa',
+      value: '11',
+      label: 'African Countries',
     },
     {
-      value: '$150k',
-      label: 'In Donations and Grants',
+      value: '21',
+      label: 'Partners',
     },
   ];
 
