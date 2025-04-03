@@ -31,7 +31,7 @@ const EventSection = () => {
             empowering the next generation.
           </p>
           <Button
-            onClick={() => router.push('/event')}
+            onClick={() => router.push('/summit')}
             className=' text-white px-10 py-6 flex items-center'
             size='lg'
             variant='default'
