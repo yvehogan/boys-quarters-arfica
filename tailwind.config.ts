@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   darkMode: ['class'],
@@ -24,15 +24,19 @@ const config: Config = {
         darkBlue: '#16222E', // dark blue color
         lightGrey: '#828282', // Light grey color
         lightishOrange: 'rgba(254, 173, 58, 0.1)',
-        customGray: 'rgba(47, 47, 47, 0.97)'
+        customGray: 'rgba(47, 47, 47, 0.97)',
       },
       keyframes: {
         'accordion-down': {
           from: { height: '0' },
-          to: { height: 'var(--radix-accordion-content-height)' },
+          to: {
+            height: 'var(--radix-accordion-content-height)',
+          },
         },
         'accordion-up': {
-          from: { height: 'var(--radix-accordion-content-height)' },
+          from: {
+            height: 'var(--radix-accordion-content-height)',
+          },
           to: { height: '0' },
         },
       },
@@ -40,9 +44,12 @@ const config: Config = {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
+      fontFamily: {
+        historia: ['var(--font-histora)'],
+      },
     },
   },
   plugins: [require('tailwindcss-animate')],
-}
+};
 
-export default config
+export default config;

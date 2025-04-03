@@ -12,11 +12,14 @@ const Layout = ({
 }) => {
   const pathname = usePathname();
   const isDonatePage =
-    pathname === '/donate' || pathname === '/volunteers';
+    pathname === '/donate' ||
+    pathname === '/volunteers' ||
+    pathname === '/summit';
   const isEvent =
-    pathname === '/event' || pathname === '/donate';
+    pathname === '/event' ||
+    pathname === '/donate' ||
+    pathname === '/summit';
 
-  console.log(isDonatePage, 'is donate');
   return (
     <div className='flex flex-col min-h-screen relative bg-white w-full'>
       {!isEvent && <Header className='px-10' />}
