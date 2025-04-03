@@ -15,12 +15,12 @@ export const initiatives = [
   { path: '/guyversations', title: 'Guyversations' },
   { path: '/boys-summit', title: 'International Boys Summit' },
   { path: '/project-sabi', title: 'Project SABI' },
-  { path: '/boyfessions', title: 'Boyfessions' },
-  { path: '/boys-finishing-academy', title: 'The Boys Finishing Academy' },
-  { path: '/campus-mentour', title: 'The Campus MenTour' },
-  { path: '/digi-street-hub', title: 'The Digi-Street Hub' },
+  // { path: '/boyfessions', title: 'Boyfessions' },
+  // { path: '/boys-finishing-academy', title: 'The Boys Finishing Academy' },
+  // { path: '/campus-mentour', title: 'The Campus MenTour' },
+  // { path: '/digi-street-hub', title: 'The Digi-Street Hub' },
   { path: '/the-exchange', title: 'The Exchange' },
-  { path: '/one-boy-project', title: 'The One Boy Project' },
+  // { path: '/one-boy-project', title: 'The One Boy Project' },
 ];
 
 interface InitiativesDropdownProps {

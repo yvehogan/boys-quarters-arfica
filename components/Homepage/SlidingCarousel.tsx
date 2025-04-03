@@ -44,24 +44,28 @@ const SlidingCarousel = () => {
                 className="pl-2 md:pl-5 md:basis-1/4 lg:basis-1/4"
               >
                 <Card className="overflow-hidden rounded-2xl">
-                  <CardContent className="relative p-0 aspect-square">
+                  <CardContent className="relative p-0 aspect-[3/3]">
+                  <div className="relative w-full h-full">
                     <Image
                       src={item.imageSrc}
                       alt={item.imageAlt}
-                      layout="fill"
-                      objectFit="cover"
-                    />
-                    <div className="flex justify-between items-center absolute bottom-0 left-0 right-0  h-24 bg-white py-5 px-3">
+                      width={300}
+                      height={300}
+                      objectFit="contain"
+                      className="rounded-2xl"
+                      />
+                    <div className="flex justify-between items-center absolute bottom-0 left-0 right-0  h-24 bg-white py-5 px-3 rounded-b-2xl">
                       <h3 className="text-secondary text- font-semibold text-2xl">
                         {item.title}
                       </h3>
                       <Link
                         href={item.link}
                         className="text-secondary flex gap-2 items-center text-[16px] mt-2"
-                      >
+                        >
                         <MoveRight className="h-5 w-5 text-[#FEAD3A]" />
                       </Link>
                     </div>
+                        </div>
                   </CardContent>
                 </Card>
               </CarouselItem>
