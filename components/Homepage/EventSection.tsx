@@ -43,7 +43,7 @@ const EventSection = () => {
 
         <div className='relative h-[400px] w-full'>
           <Image
-            src='/images/event.png'
+            src='/images/boy2-summit.png'
             alt='Boys Quarters Africa event'
             layout='fill'
             objectFit='cover'

@@ -1,7 +1,7 @@
 'use client';
-import ImageGallery from '@/components/boys-summit/ImageGallery';
+// import ImageGallery from '@/components/boys-summit/ImageGallery';
 import RegisterModal from '@/components/boys-summit/RegisterModal';
-import VideoGallery from '@/components/boys-summit/VideoGallery';
+// import VideoGallery from '@/components/boys-summit/VideoGallery';
 import SuccessModal from '@/components/Event/SuccessModal';
 import InitiativesDropdown from '@/components/InitiativesDropdown';
 import { Button } from '@/components/ui/button';
@@ -75,8 +75,8 @@ const BoysSummit = () => {
           </div>
         </div>
       </div>
-      <VideoGallery />
-      <ImageGallery />
+      {/* <VideoGallery /> */}
+      {/* <ImageGallery /> */}
 
       <RegisterModal
         isOpen={showRegister}
