@@ -66,13 +66,6 @@
 
 // export default Volunteer;
 
-import { Speaker } from 'lucide-react';
-import {
-  FaHandsHelping,
-  FaDonate,
-  FaHandshake,
-} from 'react-icons/fa';
-
 const SupportMovement = () => {
   return (
     <div className=' relative -mt-16'>
