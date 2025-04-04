@@ -6,20 +6,12 @@ import YouTube from 'react-youtube';
 
 const AboutSection = () => {
   const item = {
-    video_id: '0JsRBSvDjDR42V8N', // Replace with your actual video ID
+    video_id: '7F1KVzVwR8M',
   };
   return (
     <div className='mt-20'>
       <div className='grid md:grid-cols-2 gap-24 items-center'>
         <div className='relative h-[350px] w-full'>
-          {/* <Image
-            src='/images/video-placeholder.png'
-            alt='Boys Quarters Africa volunteers'
-            layout='fill'
-            objectFit='cover'
-            className='rounded-3xl'
-            priority
-          /> */}
           <YouTube
             videoId={item?.video_id}
             iframeClassName='w-full h-[350px] rounded-2xl'

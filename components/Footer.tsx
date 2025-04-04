@@ -54,7 +54,7 @@ const Footer: React.FC<footerProps> = ({ className }) => {
               </p>
               <p className='flex gap-2 items-center justify-center sm:justify-start'>
                 <MdLocalPhone className='text-primary h-6 w-6' />
-                <a href='tel:08034829520'>0803 482 9520</a>
+                <a href='tel:08034829520'>0703 7373 284</a>
               </p>
               <p className='flex flex-col sm:flex-row gap-1 sm:gap-2 items-center sm:items-start justify-center sm:justify-start'>
                 <MdMail className='text-primary h-6 w-6' />
