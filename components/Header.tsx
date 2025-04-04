@@ -185,6 +185,21 @@ const NavItems: React.FC<NavItemsProps> = ({
       </Link>
 
       <Link
+        href='/the-boys-too'
+        className={`relative pb-1 font-semibold ${
+          pathname === '/the-boys-too' ? 'font-bold' : ''
+        } ${mobile ? 'block py-2' : ''} ${getTextColorClass(
+          mobile,
+          isHomePage
+        )}`}
+      >
+        Initiative
+        {pathname === '/the-boys-too' && !mobile && (
+          <span className='absolute -bottom-1 left-0 w-full h-0.5 bg-primary'></span>
+        )}
+      </Link>
+
+      <Link
         href='/about-us'
         className={`relative pb-1 font-semibold ${
           pathname === '/about-us' ? 'font-bold' : ''
