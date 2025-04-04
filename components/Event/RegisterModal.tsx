@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Modal from '../Modal';
 
 interface RegisterModalProps {
@@ -12,6 +12,9 @@ const RegisterModal: React.FC<RegisterModalProps> = ({
   onClose,
   onSuccess,
 }) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isFormValid, setIsFormValid] = useState(false);
+
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -20,11 +23,23 @@ const RegisterModal: React.FC<RegisterModalProps> = ({
     physical: '',
   });
 
-  // const handleChange = (
-  //   e: React.ChangeEvent<HTMLInputElement>
-  // ) => {
-  //   setForm({ ...form, [e.target.name]: e.target.value });
-  // };
+  useEffect(() => {
+    const {
+      name,
+      email,
+      phoneNumber,
+      visitorProfile,
+      physical,
+    } = form;
+    const isValid =
+      name.trim() !== '' &&
+      email.trim() !== '' &&
+      phoneNumber.trim() !== '' &&
+      physical.trim() !== '' &&
+      visitorProfile.trim() !== '';
+    setIsFormValid(isValid);
+  }, [form]);
+
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLSelectElement
@@ -33,9 +48,50 @@ const RegisterModal: React.FC<RegisterModalProps> = ({
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (
+    e: React.FormEvent<HTMLFormElement>
+  ) => {
     e.preventDefault();
-    onSuccess(); // Show success modal
+    setIsSubmitting(true);
+
+    const payload = {
+      Name: form.name,
+      Email: form.email,
+      Number: form.phoneNumber,
+      Profile: form.visitorProfile,
+      Physically: form.physical,
+    };
+
+    try {
+      const response = await fetch(
+        'https://sheetdb.io/api/v1/q3p0l54evo91v',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(payload),
+        }
+      );
+
+      if (response.ok) {
+        setForm({
+          name: '',
+          email: '',
+          phoneNumber: '',
+          visitorProfile: '',
+          physical: '',
+        });
+        onSuccess();
+      } else {
+        throw new Error('Failed to save data');
+      }
+    } catch (error) {
+      alert('An error occurred. Please try again.');
+      console.error('Error:', error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -113,10 +169,14 @@ const RegisterModal: React.FC<RegisterModalProps> = ({
         </select>
 
         <button
+          disabled={isSubmitting || !isFormValid}
           type='submit'
-          className='flex self-center px-20 py-5 mt-8 bg-[#FEAD3A] text-white rounded-[12px]'
+          className={`${
+            isSubmitting ||
+            (!isFormValid && 'cursor-not-allowed')
+          } flex self-center px-20 py-5 mt-8 bg-[#FEAD3A] text-white rounded-[12px]`}
         >
-          Register
+          {isSubmitting ? 'Submitting...' : 'Register'}
         </button>
       </form>
     </Modal>

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Modal from '../Modal';
 
 interface RegisterModalProps {
@@ -13,6 +13,8 @@ const RegisterModal: React.FC<RegisterModalProps> = ({
   onSuccess,
 }) => {
   const [form, setForm] = useState({ name: '', email: '' });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isFormValid, setIsFormValid] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement>
@@ -20,9 +22,51 @@ const RegisterModal: React.FC<RegisterModalProps> = ({
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  useEffect(() => {
+    const { name, email } = form;
+    const isValid =
+      name.trim() !== '' && email.trim() !== '';
+    setIsFormValid(isValid);
+  }, [form]);
+
+  const handleSubmit = async (
+    e: React.FormEvent<HTMLFormElement>
+  ) => {
     e.preventDefault();
-    onSuccess(); // Show success modal
+    setIsSubmitting(true);
+
+    const payload = {
+      Name: form.name,
+      Email: form.email,
+    };
+
+    try {
+      const response = await fetch(
+        'https://sheetdb.io/api/v1/5qfn88y0kyite',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(payload),
+        }
+      );
+
+      if (response.ok) {
+        setForm({
+          name: '',
+          email: '',
+        });
+        onSuccess();
+      } else {
+        throw new Error('Failed to save data');
+      }
+    } catch (error) {
+      alert('An error occurred. Please try again.');
+      console.error('Error:', error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -56,10 +100,14 @@ const RegisterModal: React.FC<RegisterModalProps> = ({
           required
         />
         <button
+          disabled={isSubmitting || !isFormValid}
           type='submit'
-          className='flex self-center px-20 py-5 mt-8 bg-[#FEAD3A] text-white rounded-[12px]'
+          className={`${
+            isSubmitting ||
+            (!isFormValid && 'cursor-not-allowed')
+          } flex self-center px-20 py-5 mt-8 bg-[#FEAD3A] text-white rounded-[12px]`}
         >
-          Register
+          {isSubmitting ? 'Submitting...' : 'Register'}
         </button>
       </form>
     </Modal>
