@@ -29,9 +29,9 @@ const Event = () => {
           <Header />
           <div className='flex-grow flex items-center'>
             <div className='max-w-[550px] border-3'>
-              <h1 className='text-white font-bold text-4xl md:text-[50px] leading-tight mb-5'>
+              <h2 className='text-white font-bold text-4xl md:text-[50px] leading-tight mb-5'>
                 Boys Summit 2025
-              </h1>
+              </h2>
               <p className='text-white mb-10 text-[20px]'>
                 An engaging summit focused on the holistic
                 development of the African boy child.

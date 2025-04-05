@@ -12,9 +12,9 @@ const BoysToo = () => {
       <div className="flex flex-col md:flex-row justify-between">
         <div className="w-full md:w-1/2">
           <InitiativesDropdown />
-          <h1 className="text-secondary font-bold text-4xl md:text-[50px] md:leading-[78px] mt-10">
+          <h2 className="text-secondary font-bold text-4xl md:text-[50px] md:leading-[78px] mt-10">
             The #BoysToo Campaign
-          </h1>
+          </h2>
           <p className="mt-4 text-lg">
             The BoysToo Campaign is one of our Flagship Project and this falls
             under the pillar of &lsquo;Advocacy&rsquo;. The principal intent is

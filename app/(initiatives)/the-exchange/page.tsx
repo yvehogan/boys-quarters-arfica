@@ -20,9 +20,9 @@ const TheExchange = () => {
         <div className="flex flex-col md:flex-row justify-between mb-12">
           <div className="w-full md:w-1/2">
             <InitiativesDropdown />
-            <h1 className="text-secondary font-bold text-4xl md:text-[50px] md:leading-[78px] mt-10">
+            <h2 className="text-secondary font-bold text-4xl md:text-[50px] md:leading-[78px] mt-10">
               The Exchange
-            </h1>
+            </h2>
             <p className="mt-4 mb-16 text-lg">
               The Exchange TraDigital Transformation Academy is a 6-Month skill
               and value acquisition programme for Boys in remand and

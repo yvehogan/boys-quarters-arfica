@@ -11,9 +11,9 @@ const FinishingAcademy = () => {
         <div className="flex flex-col md:flex-row justify-between">
           <div className="w-full md:w-1/2 mb-10 md:mb-0">
             <InitiativesDropdown />
-            <h1 className="text-secondary font-bold text-4xl md:text-[50px] md:leading-[78px] mt-10">
+            <h2 className="text-secondary font-bold text-4xl md:text-[50px] md:leading-[78px] mt-10">
               The Boys Finishing Academy
-            </h1>
+            </h2>
             <p className="mt-4 text-lg">
               Boyformation Academy is the organization&rsquo;s custom-curated
               boot camp for boys to re-educate them and help them unlearn

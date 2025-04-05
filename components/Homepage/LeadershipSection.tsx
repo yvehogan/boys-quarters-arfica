@@ -14,9 +14,9 @@ const LeadershipSection = () => {
                 </span>
                 <div className='h-px bg-white w-full max-w-[400px]'></div>
               </div>
-              <h1 className='text-white text-5xl font-bold'>
+              <h2 className='text-white text-5xl font-bold'>
                 Leadership
-              </h1>
+              </h2>
             </div>
           </div>
 

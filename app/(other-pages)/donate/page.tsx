@@ -20,9 +20,9 @@ const Donate = () => {
         <div className="flex flex-col md:flex-row">
           <div className="w-full md:w-[60%] py-8 md:py-12">
             <div className="max-w-[500px] ">
-              <h1 className="text-black font-bold text-4xl md:text-[50px] leading-tight mb-5">
+              <h2 className="text-black font-bold text-4xl md:text-[50px] leading-tight mb-5">
                 Transform a boy, touch the world.
-              </h1>
+              </h2>
               <p className="font-light text-lg">
                 We truly believe that the Boy Child Transformation movement isn&apos;t a 100 Metre Dash but a Marathon,
                 and the unflinching support of our amazing donors across the world has been making these things happen.

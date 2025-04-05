@@ -88,9 +88,9 @@ const Events = () => {
 
           <div className="flex flex-col mt-12 items-center justify-center">
             <div className=" md:w-[800px] flex text-center flex-col md:gap-[50px] gap-6">
-              <h1 className="md:text-7xl text-4xl text-center md:leading-[90px] tracking-tight font-historia ">
+              <h2 className="md:text-7xl text-4xl text-center md:leading-[90px] tracking-tight font-historia ">
                 2025 International BoyChild Summit
-              </h1>
+              </h2>
               <div className="flex items-center gap-1 w-full justify-center ">
                 <div className="relative w-fit text-center ">
                   <span className="hidden md:block absolute top-4 left-0  w-full h-4 opacity-25 bg-[#FEAD3A]"></span>

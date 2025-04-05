@@ -17,9 +17,9 @@ const BoysSummit = () => {
         <div className='flex flex-col md:flex-row justify-between md:gap-8'>
           <div className=' md:w-1/2 mb-10 md:mb-0'>
             <InitiativesDropdown />
-            <h1 className='text-secondary font-bold text-4xl md:text-[50px] md:leading-[100%] mt-10'>
+            <h2 className='text-secondary font-bold text-4xl md:text-[50px] md:leading-[100%] mt-10'>
               International Boys Summit 2025
-            </h1>
+            </h2>
             <p className='mt-4 text-lg'>
               On{' '}
               <span className='font-bold'>

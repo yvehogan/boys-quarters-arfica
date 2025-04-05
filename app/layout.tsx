@@ -15,9 +15,9 @@ const histora = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'Boys Quarters Africa',
+  title: 'Boys Quarters Africa | Crafting Exceptional Lives for Boys & Men',
   description:
-    'Boys Quarters Africa is a movement resolved to educate, empower & advocate for a new tribe of boys who will deliberately & purposefully transition from boyhood to manhood.',
+    'Boys Quarters Africa is a movement dedicated to educating, empowering, and advocating for boys and men to lead change and live with purpose.',
 };
 
 export default function RootLayout({
