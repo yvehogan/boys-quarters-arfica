@@ -8,9 +8,9 @@ const OneBoyProject = () => {
       <div className="flex flex-col md:flex-row justify-between">
         <div className="w-full md:w-1/2 mb-10 md:mb-0">
           <InitiativesDropdown />
-          <h1 className="text-secondary font-bold text-4xl md:text-[50px] md:leading-[78px] mt-10">
+          <h2 className="text-secondary font-bold text-4xl md:text-[50px] md:leading-[78px] mt-10">
             The One Boy Project
-          </h1>
+          </h2>
           <p className="mt-4 text-lg">
             As at January 2020, the educeleb.com reported that there are more
             boys out of school than girls in Nigeria. According to the report,

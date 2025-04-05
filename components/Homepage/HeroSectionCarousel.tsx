@@ -117,13 +117,6 @@ const HeroSectionCarousel: React.FC = () => {
             </p>
 
             <div className='flex flex-row md:flex-row gap-5'>
-              {/* <a
-                href="https://bit.ly/boys-quarter-africa-volunteer"
-                className="bg-transparent border border-primary text-primary rounded-md px-5 py-3 text-lg hover:bg-primary/10 hover:text-white transition-colors duration-300"
-                target="_blank"
-              >
-                Get Involved
-              </a> */}
               <Button
                 className='bg-transparent border border-primary text-primary  hover:bg-primary/10 hover:text-white transition-colors duration-300'
                 size='lg'

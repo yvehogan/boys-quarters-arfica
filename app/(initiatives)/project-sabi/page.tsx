@@ -13,9 +13,9 @@ const ProjectSabi = () => {
         <div className='flex flex-col md:flex-row justify-between'>
           <div className='md:w-1/2'>
             <InitiativesDropdown />
-            <h1 className='text-secondary font-bold text-4xl md:text-[50px] md:leading-[78px] mt-10'>
+            <h2 className='text-secondary font-bold text-4xl md:text-[50px] md:leading-[78px] mt-10'>
               Project SABI
-            </h1>
+            </h2>
             <p className='mt-4 text-lg'>
               This project answers the seemingly simple but
               complex question, “Shey you sabi?” A

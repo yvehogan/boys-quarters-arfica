@@ -13,7 +13,7 @@ const VideoGallery: React.FC = () => {
 
   return (
     <div className="md:px-28 px-4 mb-16 mt-24">
-      <h1 className="text-3xl font-bold mb-10">Videos</h1>
+      <h2 className="text-3xl font-bold mb-10">Videos</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {images.map((image, index) => (
           <div key={index} className="rounded-xl overflow-hidden">

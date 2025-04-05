@@ -14,9 +14,9 @@ const EducationSection = () => {
                 </span>
                 <div className='h-px bg-secondary w-full max-w-[400px]'></div>
               </div>
-              <h1 className='text-secondary text-5xl font-bold'>
+              <h2 className='text-secondary text-5xl font-bold'>
                 Education
-              </h1>
+              </h2>
             </div>
           </div>
 

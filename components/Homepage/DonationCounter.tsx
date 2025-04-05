@@ -28,9 +28,9 @@ const DonationCounter: React.FC = () => {
       {/* Overlay Content */}
       <div className='relative z-10 text-white flex flex-col lg:flex-row justify-between items-center'>
         <div className='max-w-xl'>
-          <h1 className='text-4xl md:text-[50px] leading-relaxed font-semibold mb-4'>
+          <h2 className='text-4xl md:text-[50px] leading-relaxed font-semibold mb-4'>
             Help us get to 1,000,000 children.
-          </h1>
+          </h2>
           {/* Buttons */}
           <div className='flex flex-col md:flex-row justify-start items-center mt-8 md:space-x-4'>
             <Button

@@ -12,7 +12,7 @@ const EmpowermentSection = () => {
                 </span>
                 <div className="h-px bg-white w-full max-w-[400px]"></div>
               </div>
-              <h1 className="text-white text-4xl font-bold">Empowerment</h1>
+              <h2 className="text-white text-4xl font-bold">Empowerment</h2>
             </div>
 
           {/* Right Column */}

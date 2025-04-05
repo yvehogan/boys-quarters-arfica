@@ -9,9 +9,9 @@ const Boyfessions = () => {
       <div className="flex flex-col md:flex-row justify-between">
         <div className="md:w-1/2">
           <InitiativesDropdown />
-          <h1 className="text-secondary font-bold text-4xl md:text-[50px] md:leading-[78px] mt-10">
+          <h2 className="text-secondary font-bold text-4xl md:text-[50px] md:leading-[78px] mt-10">
             Boyfessions
-          </h1>
+          </h2>
           <p className="mt-4 text-lg">
             The Boyfessions is a compendium of healthy confessions for Boys and
             everyone who loves them. This book helps provide clarity on the

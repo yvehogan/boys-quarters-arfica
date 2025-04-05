@@ -26,9 +26,9 @@ const GuyVersations = () => {
         <div className='flex flex-col lg:flex-row justify-between md:gap-8 '>
           <div className='lg:w-1/2 mb-10 md:mb-0'>
             <InitiativesDropdown />
-            <h1 className='text-secondary font-bold text-4xl md:text-[50px] md:leading-[78px] mt-10'>
+            <h2 className='text-secondary font-bold text-4xl md:text-[50px] md:leading-[78px] mt-10'>
               Guyversations
-            </h1>
+            </h2>
             <p className='md:-mt-2 mt-1 font-semibold text-xl'>
               No Filters. No Judgement. Real Uninhibited
               Space for Men
@@ -82,9 +82,9 @@ const GuyVersations = () => {
         </div>
       </div>
       <section className='bg-[#16222E] w-full md:px-28 px-4 py-10 mt-6 '>
-        <h1 className='text-center mt-2 mb-14 text-[#F7F8FA] font-semibold text-4xl'>
+        <h2 className='text-center mt-2 mb-14 text-[#F7F8FA] font-semibold text-4xl'>
           Upcoming Guyversation sessions
-        </h1>
+        </h2>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-8  mb-8'>
           {sessions.map((session, index) => (
             <div
