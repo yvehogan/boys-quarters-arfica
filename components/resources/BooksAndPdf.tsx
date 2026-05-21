@@ -3,15 +3,23 @@ import React from "react";
 const BooksAndPdf = () => {
   const books = [
     {
+      title: "State of the BoyChild Address",
+      description: "State of the Boy Child Address - Solomon O. Ayodele",
+      image: "/images/book.png",
+      downloadLink: "/State of the Boy Child Address - Solomon O. Ayodele.pdf",
+    },
+    {
       title: "Boyfessions",
       description: "Download a compendium of confessions for Boys",
       image: "/images/book.png",
+      downloadLink: "",
     },
     {
       title: "Actions, Boys & Choices",
       description:
         "A comprehensive manual on teaching Boys about Sexual Abuse",
       image: "/images/book.png",
+      downloadLink: "",
     },
   ];
 
@@ -31,6 +39,15 @@ const BooksAndPdf = () => {
             />
             <h3 className="text-lg font-semibold">{book.title}</h3>
             <p className="text-sm text-gray-600">{book.description}</p>
+            {book.downloadLink && (
+              <a
+                href={book.downloadLink}
+                download
+                className="bg-transparent border border-primary text-primary px-6 py-2 flex items-center rounded-lg text-sm"
+              >
+                Download PDF
+              </a>
+            )}
           </div>
         ))}
       </div>
